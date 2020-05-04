@@ -1,11 +1,9 @@
 # GTBuster
 A set of scripts for looking piRNA guide-target pairs by integrating small RNA-seq and degradome-seq data
 
-Usage:
+## Usage
 
-run potential_t/deg.wt_pi6_B046.dp.uniq_only.50_1_50.p piRNA_WT/WT.dp.pi-Kctd7.bed12.all.piRNA.1rpm.insert pi6_B046.g-pi-Kctd7.dp
-
-bash pirna_target_finder.wrapper.v3.sh insert output_prefix ref/p
+`bash pirna_target_finder.wrapper.v3.sh insert output_prefix ref/p`
 
 `insert` is a tab-delimited file containing two columns: piRNA sequence and its normalized abundance (e.g., reads per million).
 
@@ -34,6 +32,8 @@ TGTACCTGATCCGCCCCTTATGTTCTTCTCTTACTCTGTACAGAAGAAAG
 CAAGCATCTGTGCAGGATTGAGACACTTCTGTTAGAAGAAAAATGGAAGG
 T
 ```
+
+## Output format
 
 The output is a tab-delimited files describing the piRNA guides and their corresponding targets:
 
